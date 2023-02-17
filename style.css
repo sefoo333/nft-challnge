@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    transition: 0.5s;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 379px;
+    padding: 20px 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.container .image ion-icon {
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-size: 45px;
+    display: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+.container .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .image:hover ion-icon {
+    display: flex;
+}
+
+.container .image:hover::before {
+    display: flex;
+}
+
+.container .image {
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: 0.5s;
+}
+
+.container .image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.425);
+    display: none;
+    z-index: 2;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+}
+
+.container .content .text h3 {
+    color: white;
+    margin: 20px 0;
+    transition: 0.5s;
+}
+
+.container .content .text h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content .text p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.container .content .elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.container .content .elements .diamond,
+.container .content .elements .clock {
+    display: flex;
+    align-items: center;
+}
+
+.container .content .elements .diamond {
+    color: hsl(178, 100%, 50%);
+}
+
+.container .content .elements .clock {
+    color: hsl(215, 51%, 70%);
+}
+
+.container .content .elements .diamond h4 {
+    margin-left: 6px;
+}
+
+.container .content .elements .clock h4 {
+    margin-left: 5px;
+}
+
+.container .content .elements:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    top: 16px;
+    margin: 20px 0;
+}
+
+.container .footer img {
+    width: 15%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.container .footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 20px 0;
+}
+
+.container .footer h4 {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+
+
+.container .footer span {
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .footer span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 340px;
+    }
+}
